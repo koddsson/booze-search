@@ -1,0 +1,33 @@
+<template id="booze-template">
+  <style>
+    .booze-wrapper {
+      border: 1px solid lightgray;
+      border-radius: 2px;
+    }    
+    .header {
+      border-bottom: 1px solid lightgray;
+      text-align: right;
+      padding: 5px;
+    }
+    .row {
+      padding: 5px;
+      border-bottom: 1px solid lightgray;
+      display: block;
+    }
+    .row:last-child {
+      border: none;
+    }
+    .search:focus {
+      outline: none;
+    }
+  </style>
+  <div class='booze-wrapper'>
+    <div class='error'></div>
+    <div class='header'>
+      <input class='search' placeholder='Search'>
+    </div>
+    <div class='data'></div>
+  </div>
+</template>
+
+<script src='booze.js'></script>
