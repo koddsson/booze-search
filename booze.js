@@ -67,7 +67,7 @@ var manager;
   };
 
   boozePrototype.attachedCallback = function() {
-    fetch('http://tldr.is/vinbud.json')
+    fetch('http://beta.apis.is/vinbud/items/')
       .then(function(response) {
         return response.json();
       }).then(function(json) {
