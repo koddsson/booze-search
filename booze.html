@@ -54,12 +54,20 @@
       display: flex;
     }
     .row .title {
-      margin-right: auto;
       color: #000000;
+      margin: auto;
+      margin-left: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .row .price {
+      white-space: nowrap;
     }
     .row .weight {
       width: 50px;
       text-align: right;
+      white-space: nowrap;
     }
     .row:last-child {
       border: none;
